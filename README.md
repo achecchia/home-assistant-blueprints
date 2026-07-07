@@ -1,4 +1,4 @@
-# Home-Assistant
+# Home Assistant Blueprints
 
 Reusable Home Assistant blueprints for UniFi Protect doorbells, Sonos, and Google TTS.
 
