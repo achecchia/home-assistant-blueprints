@@ -5,16 +5,34 @@ Reusable Home Assistant blueprints for UniFi Protect doorbells, Sonos, and Googl
 ## Included blueprints
 
 ### UniFi Doorbell -> Sonos Google Announcement (Sync)
+
 Best option for multi-room sync. Sends one announcement call to all selected Sonos players with one shared volume.
 
 File:
 - `automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml`
 
+[![Open your Home Assistant instance and import this blueprint.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml)
+
+Raw import URL:
+
+```text
+https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml
+```
+
 ### UniFi Doorbell -> Sonos Google Announcement (Per Speaker Volume)
+
 Lets you assign a different announcement volume to each Sonos player. This can be slightly less synchronized because Home Assistant sends the announcement one speaker at a time.
 
 File:
 - `automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml`
+
+[![Open your Home Assistant instance and import this blueprint.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml)
+
+Raw import URL:
+
+```text
+https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml
+```
 
 ## Features
 
@@ -38,14 +56,7 @@ In Home Assistant:
 
 1. Go to **Settings -> Automations & scenes -> Blueprints**
 2. Click **Import Blueprint**
-3. Paste one of the raw GitHub URLs below
-
-### Raw import URLs
-
-```text
-https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml
-https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml
-```
+3. Paste one of the raw GitHub URLs above
 
 ## Repo structure
 
