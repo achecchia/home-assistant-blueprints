@@ -11,12 +11,12 @@ Best option for multi-room sync. Sends one announcement call to all selected Son
 File:
 - `automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml`
 
-[![Open your Home Assistant instance and import this blueprint.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml)
+[![Open your Home Assistant instance and import this blueprint.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/achecchia/home-assistant-blueprints/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml)
 
 Raw import URL:
 
 ```text
-https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml
+https://raw.githubusercontent.com/achecchia/home-assistant-blueprints/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_sync.yaml
 ```
 
 ### UniFi Doorbell -> Sonos Google Announcement (Per Speaker Volume)
@@ -26,12 +26,36 @@ Lets you assign a different announcement volume to each Sonos player. This can b
 File:
 - `automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml`
 
-[![Open your Home Assistant instance and import this blueprint.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml)
+[![Open your Home Assistant instance and import this blueprint.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/achecchia/home-assistant-blueprints/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml)
 
 Raw import URL:
 
 ```text
-https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml
+https://raw.githubusercontent.com/achecchia/home-assistant-blueprints/main/automation/sonos-doorbell/unifi_doorbell_sonos_google_announce_per_speaker.yaml
+```
+
+### Shelly 1 Gen4 -> Sonos Google Announcement (Sync)
+
+Detects a single doorbell-button press using the Shelly input event entity, with configurable Google TTS announcement and cooldown. Configure the Shelly input as **Button** and output as **Detached**.
+
+[![Import into Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/achecchia/home-assistant-blueprints/main/automation/sonos-doorbell/shelly_gen4_doorbell_sonos_google_announce_sync.yaml)
+
+Raw import URL:
+
+```text
+https://raw.githubusercontent.com/achecchia/home-assistant-blueprints/main/automation/sonos-doorbell/shelly_gen4_doorbell_sonos_google_announce_sync.yaml
+```
+
+### Shelly 1 Gen4 -> Sonos Google Announcement (Per Speaker Volume)
+
+Detects a single doorbell-button press using the Shelly input event entity, with configurable Google TTS announcement and cooldown. Configure the Shelly input as **Button** and output as **Detached**.
+
+[![Import into Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/achecchia/home-assistant-blueprints/main/automation/sonos-doorbell/shelly_gen4_doorbell_sonos_google_announce_per_speaker.yaml)
+
+Raw import URL:
+
+```text
+https://raw.githubusercontent.com/achecchia/home-assistant-blueprints/main/automation/sonos-doorbell/shelly_gen4_doorbell_sonos_google_announce_per_speaker.yaml
 ```
 
 ## Features
@@ -46,7 +70,8 @@ https://raw.githubusercontent.com/achecchia/Home-Assistant/main/automation/sonos
 ## Requirements
 
 - Home Assistant
-- UniFi Protect integration
+- UniFi Protect integration (UniFi blueprints only)
+- Shelly integration with a Shelly 1 Gen4 configured for Button / Detached (Shelly blueprints only)
 - Sonos integration
 - Google Translate TTS configured in Home Assistant
 
@@ -61,14 +86,16 @@ In Home Assistant:
 ## Repo structure
 
 ```text
-Home-Assistant/
+home-assistant-blueprints/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
 └── automation/
     └── sonos-doorbell/
         ├── unifi_doorbell_sonos_google_announce_sync.yaml
-        └── unifi_doorbell_sonos_google_announce_per_speaker.yaml
+        ├── unifi_doorbell_sonos_google_announce_per_speaker.yaml
+        ├── shelly_gen4_doorbell_sonos_google_announce_sync.yaml
+        └── shelly_gen4_doorbell_sonos_google_announce_per_speaker.yaml
 ```
 
 ## Recommended usage
